@@ -15,7 +15,23 @@ public class BookTest {
 		books.add(new Book(550, "Amin Maoluf", "Dogudan Uzakta"));
 		books.add(new Book(650, "Amin Maoluf", "Afrikali Leo"));
 		
-		Collections.sort(books);
+		Collections.sort(books, new PageNumberOrder());
+		books.forEach(b->System.out.println(b));
+		
+		System.out.println();
+		Collections.sort(books, new PageNumberReverseOrder());
+		books.forEach(b->System.out.println(b));
+		
+		System.out.println();
+		Collections.sort(books, new NameComparator());
+		books.forEach(b->System.out.println(b));
+		
+		System.out.println();
+		Collections.sort(books, new AuthorAndNameComparator());
+		books.forEach(b->System.out.println(b));
+		
+		System.out.println();
+		Collections.sort(books, new AuthorAndNameReverseComparator());
 		books.forEach(b->System.out.println(b));
 	}
 	
