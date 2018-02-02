@@ -1,0 +1,28 @@
+2018-02-02 14:38:23,875 INFO c.a.HelloLog {main} hello info  
+2018-02-02 14:38:23,875 WARN c.a.HelloLog {main} hello warn  
+2018-02-02 14:38:23,875 ERROR c.a.HelloLog {main} hello error  
+2018-02-02 14:38:23,875 FATAL c.a.HelloLog {main} hello fatal  2018-02-02 14:40:22,503 INFO c.a.HelloLog {main} hello info  
+2018-02-02 14:40:22,503 WARN c.a.HelloLog {main} hello warn  
+2018-02-02 14:40:22,503 ERROR c.a.HelloLog {main} hello error  
+2018-02-02 14:40:22,503 FATAL c.a.HelloLog {main} hello fatal  
+2018-02-02 14:40:56,084 INFO c.a.HelloLog {main} hello info  
+2018-02-02 14:40:56,084 WARN c.a.HelloLog {main} hello warn  
+2018-02-02 14:40:56,084 ERROR c.a.HelloLog {main} hello error  
+2018-02-02 14:40:56,100 FATAL c.a.HelloLog {main} hello fatal  
+2018-02-02 16:02:25,737 INFO c.a.HelloLog {main} hello info  
+2018-02-02 16:02:25,740 WARN c.a.HelloLog {main} hello warn  
+2018-02-02 16:02:25,740 ERROR c.a.HelloLog {main} hello error  
+2018-02-02 16:02:25,741 FATAL c.a.HelloLog {main} hello fatal  
+2018-02-02 16:03:00,076 INFO c.a.HelloLog {main} hello info  
+2018-02-02 16:03:00,078 WARN c.a.HelloLog {main} hello warn  
+2018-02-02 16:03:00,078 ERROR c.a.HelloLog {main} hello error  
+2018-02-02 16:03:00,079 FATAL c.a.HelloLog {main} hello fatal  
+2018-02-02 16:03:00,080 TRACE c.a.Another {main} Hello trace from another  
+2018-02-02 16:03:00,080 DEBUG c.a.Another {main} Hello debug from another  
+2018-02-02 16:03:00,081 INFO c.a.Another {main} Hello info from another  
+2018-02-02 16:03:00,081 WARN c.a.Another {main} Hello warn from another  
+2018-02-02 16:03:00,081 FATAL c.a.Another {main} Hello fatal from another  
+2018-02-02 16:03:36,382 INFO c.a.HelloLog {main} hello info  
+2018-02-02 16:03:36,384 WARN c.a.HelloLog {main} hello warn  
+2018-02-02 16:03:36,384 ERROR c.a.HelloLog {main} hello error  
+2018-02-02 16:03:36,385 FATAL c.a.HelloLog {main} hello fatal  
