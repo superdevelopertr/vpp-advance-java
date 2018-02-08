@@ -21,13 +21,19 @@ public class BoundedTest {
 		
 		
 		printout2(numbers);
+		
+		
+		List a = new ArrayList();
+		a.add(100000);
+		a.add("hello");
+		printout3(a);
 	}
 	
 	public static void printout(List<? extends Number> numbers ) {
-		numbers.stream().forEach(a->System.out.println(a));
+		numbers.stream().forEach(a->System.out.println(a.doubleValue()));
 	}
 	
-	public static void printout2(List<? super Number> numbers ) {
+	public static void printout2(List<? super Integer> numbers ) {
 		numbers.stream().forEach(a->System.out.println(a));
 	}
 	
