@@ -3,7 +3,7 @@ package com.ailhanli;
 import java.util.Arrays;
 import java.util.List;
 
-public class HelloLambda {
+public class HelloAnoClasses {
 
 	interface Mathcalculator {
 		double calc(List<Double> items);
@@ -15,13 +15,17 @@ public class HelloLambda {
 	
 	public static void main(String[] args) {
 		
-		Mathcalculator avgCalc = items->{
-			double sum = 0;
-			for (Double item : items) {
-				sum += item;
+		Mathcalculator avgCalc = new Mathcalculator() {
+			@Override
+			public double calc(List<Double> items) {
+				double sum = 0;
+				for (Double item : items) {
+					sum += item;
+				}
+				return sum / items.size();
 			}
-			return sum / items.size();
 		};
+		
 		
 		System.out.println(calc(avgCalc, Arrays.asList(10d,20d, 30d)));;
 	}
