@@ -1,4 +1,4 @@
-package com.ailhanli.ex4;
+package com.ailhanli.ex5;
 
 public class CustomerHarness {
 	

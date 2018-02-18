@@ -1,4 +1,4 @@
-package com.ailhanli.ex4;
+package com.ailhanli.ex5;
 
 
 import java.util.Date;
@@ -21,11 +21,13 @@ public class CustomerManager {
 	
 	public Customer getNextCustomer() {
 		//should do:
-		Customer cust  = null;
-		synchronized (this) {
-			cust = customers.remove(0);
-		}
-		return cust;
+//		Customer cust  = null;
+//		synchronized (this) {
+//			cust = customers.remove(0);
+//		}
+//		return cust;
+		
+		return customers.get(0);
 	}
 
 	public void howManyCustomers() {

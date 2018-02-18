@@ -1,4 +1,4 @@
-package com.ailhanli.ex2;
+package com.ailhanli.ex3;
 
 
 public class Book implements BookReadOnly {

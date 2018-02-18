@@ -1,32 +1,14 @@
 package com.ailhanli.ex3;
 
-import java.util.Objects;
-
 public class Main {
-	
-	public static void main(String[] args) 
-	{
-		Runtime runtime = Runtime.getRuntime();
 
-		long availableBytes = runtime.freeMemory();
-		System.out.println("Available memory: " + availableBytes / 1024 + "k");
+	public static void main(String[] args) {
 
-		// let's create a ton of garbage....
-		Customer c;
-		for (int i=0; i<10_000_000; i++)
-		{
-			c = new Customer("John");	
-		}
+		BookCollection bc = new BookCollection();
 		
-		availableBytes = runtime.freeMemory();
-		System.out.println("Available memory: " + availableBytes / 1024 + "k");
+		//get price of book called Tom Jones in EUR
+		System.out.println(bc.findBookByName("Tom Jones").getPrice().convert("EUR"));
 		
-		System.gc();
-		
-		availableBytes = runtime.freeMemory();
-		System.out.println("Available memory: " + availableBytes / 1024 + "k");
-		
+		//ReadOnlyBook rb = bc.findBookByName("Tom Jones");		
 	}
-
-	
 }

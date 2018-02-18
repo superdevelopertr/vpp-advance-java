@@ -1,4 +1,4 @@
-package com.ailhanli.ex0;
+package com.ailhanli.ex1;
 
 
 public class Main {

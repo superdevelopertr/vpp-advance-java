@@ -1,20 +1,33 @@
 package com.ailhanli.ex4;
 
-public class Customer {
 
-	private int id;
+public class Customer  {
 	private String name;
-	
-	public void setId(int id) {
-		this.id = id;
-	}
-	
-	public String toString() {
-		return id + " : " + name;
+
+	public String getName() {
+		return name;
 	}
 	
 	public Customer(String name) {
-		super();
 		this.name = name;
-	}	
+	}
+	
+	public Customer(Customer oldCustomer) {
+		this.name = oldCustomer.name; 
+	}
+	
+	
+	public String toString() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	@Override
+	protected void finalize() throws Throwable {
+		System.out.println("Object is going to Gc's");
+	}
+	
 }

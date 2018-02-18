@@ -1,4 +1,4 @@
-package com.ailhanli.ex1;
+package com.ailhanli.ex2;
 
 import java.util.ArrayList;
 import java.util.Collections;

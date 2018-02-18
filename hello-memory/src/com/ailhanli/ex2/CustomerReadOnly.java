@@ -1,4 +1,4 @@
-package com.ailhanli.ex1;
+package com.ailhanli.ex2;
 
 public interface CustomerReadOnly {
 	String getName();
